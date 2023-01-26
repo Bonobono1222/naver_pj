@@ -4,34 +4,58 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NAVER 이용약관</title>
+  <title>01월 26일 네이버 로그인 폼 수업</title>
   <link rel="stylesheet" href="./css/style.css">
-  <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/522c2b7a73.js" crossorigin="anonymous"></script>
+  <!--fontawesome-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!--jquery-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!--favicon-->
 </head>
 <body>
   <div class="wrapper">
-    <div class="main-s">
-      <div class="main-img">
-        <img src="./images/logo.png" alt="naver logo">
+    <header class="global-header">
+      <h1 class="logo">
+        <a href="http://naver.com">
+          <img src="./images/logo.png" alt="네이버 로고">
+        </a>
+      </h1>
+      <div class="lang">
+        <select>
+          <option>한국어</option>
+          <option>English</option>
+          <option>中文(简体)</option>
+          <option>中文(台灣)</option>
+        </select>
       </div>
-      <select>
-        <option>지인어</option>
-        <option>한국어</option>
-        <option>English</option>
-        <option>中文(简体)</option>
-        <option>中文(台灣)</option>
-      </select>
-    </div>
-    <div class="ck-1">
-      <input type="checkbox"><img src="./images/pc_check_off_24.png" alt="">
-      <h3>네이버 이용약관, 개인정보 수집 및 이용, 위치정보<br>
-        이용약관(선택), 프로모션 정보 수신(선택)에 모두 동<br>의합니다.<h3>
-    </div>
-    <div class="ck-2">
-      <p><input type="checkbox"><b>네이버 이용약관 동의<span style="color: rgb(16, 197, 0); font-size: 12px;">(필수)</span></b></p>
-      <div class="text-box-1">
-        <p><b>여러분을 환영합니다.</b></p>
-        <br>
+    </header>
+
+    <section class="join-form">
+      <form id="form1" action="./join.html">
+        <div class="total">
+          <label>
+            <input type="checkbox">
+            <div class="checkbox-img"></div>
+            <p>네이버 이용약관, 개인정보 수집 및 이용, 위치정보 이용약관(선택), 프로모션 정보 수신(선택)에 모두 동의합니다.</p>
+          </label>
+        </div>
+
+        <div class="agree-list">
+          <div class="agree req">
+            <label>
+              <input type="checkbox">
+              <div class="checkbox-img"></div>
+              <p>네이버 이용약관 동의<span class="text-primary">(필수)</span></p>
+            </label>
+            <div class="terms">
+              <p><b>여러분을 환영합니다.</b></p>
             <p>
               네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를
               이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
@@ -304,14 +328,16 @@
             </ul>
             <p>
               네이버 서비스와 관련하여 궁금하신 사항이 있으시면 <a href="#">고객센터</a>(대표번호: 1588 – 3820/ 평일 09:00~18:00)로 문의 주시기 바랍니다.
-            </p>
-      </div>
-    </div>
-    <div class="ck-2">
-      <p><input type="checkbox"><b>개인정보 수집 및 이용 동의<span style="color: rgb(16, 197, 0); font-size: 12px;">(필수)</span></b></p>
-      <div class="text-box-1">
-        <p><b>여러분을 환영합니다.</b></p>
-        <br>
+            </div>
+          </div>
+          <div class="agree req">
+            <label>
+              <input type="checkbox">
+              <div class="checkbox-img"></div>
+              <p>개인 정보 수집 및 동의<span class="text-primary">(필수)</span></p>
+            </label>
+            <div class="terms">
+              <p><b>여러분을 환영합니다.</b></p>
             <p>
               네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를
               이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
@@ -584,14 +610,16 @@
             </ul>
             <p>
               네이버 서비스와 관련하여 궁금하신 사항이 있으시면 <a href="#">고객센터</a>(대표번호: 1588 – 3820/ 평일 09:00~18:00)로 문의 주시기 바랍니다.
-            </p>
-      </div>
-    </div>
-    <div class="ck-2">
-      <p><input type="checkbox"><b>위치정보 이용약관 동의<span style="color: #6e6d6d; font-size: 12px;">(선택)</span></b></p>
-      <div class="text-box-1">
-        <p><b>여러분을 환영합니다.</b></p>
-        <br>
+            </div>
+          </div>
+          <div class="agree">
+            <label>
+              <input type="checkbox">
+              <div class="checkbox-img"></div>
+              <p>위치정보 이용약관 동의<span class="text-secondary">(선택)</span></p>
+            </label>
+            <div class="terms">
+              <p><b>여러분을 환영합니다.</b></p>
             <p>
               네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를
               이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
@@ -864,14 +892,16 @@
             </ul>
             <p>
               네이버 서비스와 관련하여 궁금하신 사항이 있으시면 <a href="#">고객센터</a>(대표번호: 1588 – 3820/ 평일 09:00~18:00)로 문의 주시기 바랍니다.
-            </p>
-      </div>
-    </div>
-    <div class="ck-2">
-      <p><input type="checkbox"><b>프로모션 정보 수신<span style="color: #6e6d6d; font-size: 12px;">(선택)</span></b></p>
-      <div class="text-box-1">
-        <p><b>여러분을 환영합니다.</b></p>
-        <br>
+            </div>
+          </div>
+          <div class="agree">
+            <label>
+              <input type="checkbox">
+              <div class="checkbox-img"></div>
+              <p>프로모션 정보 수신 동의<span class="text-secondary">(선택)</span></p>
+            </label>
+            <div class="terms">
+              <p><b>여러분을 환영합니다.</b></p>
             <p>
               네이버 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 네이버 서비스의 이용과 관련하여 네이버 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를
               이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다.
@@ -1144,14 +1174,21 @@
             </ul>
             <p>
               네이버 서비스와 관련하여 궁금하신 사항이 있으시면 <a href="#">고객센터</a>(대표번호: 1588 – 3820/ 평일 09:00~18:00)로 문의 주시기 바랍니다.
-            </p>
-      </div>
-    </div>
-    <div class="button-1-2">
-      <button class="button-1" type="button" name="">취소</button>
-      <button class="button-2" type="button" name="">확인</button>
-    </div>
+            </div>
+          </div>
+        </div>
+
+        <P id="red-alert">네이버 이용약관과 개인정보 수집 및 이용에 대한 안내에 모두 동의해주세요.</P>
+        <div class="btn-box">
+          <button type="button" id="cancel">취소</button>
+          <button type="submit" id="submit">확인</button>
+        </div>
+        <p class="group-join">회사, 동아리 등 단체에서 사용할 ID가 필요하세요?
+          <a href="">단체 회원 가입</a>
+        </p>
+      </form>
+    </section>
   </div>
-  <script src="./js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
